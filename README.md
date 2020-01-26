@@ -1,0 +1,1 @@
+# stm32_ext_flash
