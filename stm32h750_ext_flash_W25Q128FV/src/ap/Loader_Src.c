@@ -63,13 +63,6 @@ int SectorErase (uint32_t EraseStartAddress ,uint32_t EraseEndAddress)
 ********************************************************************************/	
 int Read (uint32_t Address, uint32_t Size, uint8_t* Buffer)
 {
-#if 0
-
-  qspiRead(Address - qspiGetAddr(), Buffer, Size);
-
-  return 1;
-
-#else
   int i = 0;
 
   qspiEnableMemoryMappedMode();
@@ -83,7 +76,6 @@ int Read (uint32_t Address, uint32_t Size, uint8_t* Buffer)
 
 
 	return 1;
-#endif
 } 
 
 
